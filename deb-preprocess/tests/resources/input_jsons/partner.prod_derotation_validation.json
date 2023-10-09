@@ -1,0 +1,42 @@
+{
+  "env": "https://partner.prod.decisionengines.ai",
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaGVnZGUiLCJhdWQiOiJhbnkiLCJ1c2VyRGV0YWlsIjoie1xuICBcInVzZXJuYW1lXCIgOiBcInNoZWdkZVwiLFxuICBcImZpcnN0TmFtZVwiIDogXCJTdWRhcnNoYW5cIixcbiAgXCJsYXN0TmFtZVwiIDogXCJIZWdkZVwiLFxuICBcImVtYWlsXCIgOiBcInNoZWdkZUBkZWNpc2lvbmVuZ2luZXMuYWlcIixcbiAgXCJleGlzdGluZ1VzZXJcIiA6IGZhbHNlLFxuICBcImF1dGhvcml0aWVzXCIgOiBbIHtcbiAgICBcInJvbGVcIiA6IFwiUk9MRV9BZG1pbmlzdHJhdG9yXCIsXG4gICAgXCJhdXRob3JpdHlcIiA6IFwiUk9MRV9BZG1pbmlzdHJhdG9yXCJcbiAgfSwge1xuICAgIFwicm9sZVwiIDogXCJST0xFX0dST1VQX1Jldmlld1JvbGVcIixcbiAgICBcImF1dGhvcml0eVwiIDogXCJST0xFX0dST1VQX1Jldmlld1JvbGVcIlxuICB9IF0sXG4gIFwidGVuYW50SWRcIiA6IFwiREVcIixcbiAgXCJjcmVhdGVkVFNcIiA6IDAsXG4gIFwidXBkYXRlZFRTXCIgOiAwLFxuICBcInVzclJvbGVzXCIgOiBbIHtcbiAgICBcImRiX2lkXCIgOiBcInJvbGU6Uk9MRV9HUk9VUF9SZXZpZXdSb2xlXCIsXG4gICAgXCJuYW1lXCIgOiBcIlJPTEVfR1JPVVBfUmV2aWV3Um9sZVwiLFxuICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiVGhpcyByb2xlIGlzIHVzZWQgdG8gYXNzaWduIHJldmlld1wiLFxuICAgIFwic3lzdGVtUm9sZVwiIDogZmFsc2UsXG4gICAgXCJwZXJtaXNzaW9uc1wiIDogWyBdXG4gIH0sIHtcbiAgICBcImRiX2lkXCIgOiBcInJvbGU6Uk9MRV9BZG1pbmlzdHJhdG9yXCIsXG4gICAgXCJuYW1lXCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLFxuICAgIFwiZGVzY3JpcHRpb25cIiA6IFwiXCIsXG4gICAgXCJzeXN0ZW1Sb2xlXCIgOiB0cnVlLFxuICAgIFwicGVybWlzc2lvbnNcIiA6IFsgXVxuICB9IF0sXG4gIFwiZW52VHlwZVwiIDogXCJkZXZcIixcbiAgXCJlbnZJZFwiIDogXCJjc29kZXZcIixcbiAgXCJ0b2tlbkV4cGlyYXRpb25NaW5zXCIgOiAxNDQwLFxuICBcInJvbGVzXCIgOiBbIFwiUk9MRV9BZG1pbmlzdHJhdG9yXCIsIFwiUk9MRV9HUk9VUF9SZXZpZXdSb2xlXCIgXSxcbiAgXCJncm91cHNcIiA6IFsgXCJST0xFX0dST1VQX1Jldmlld1JvbGVcIiBdLFxuICBcImFkbWluXCIgOiB0cnVlXG59IiwidGVuYW50SWQiOiJERSIsImVudklkIjoiY3NvZGV2IiwiZXhwIjoxNjUwMDk1MzU4LCJpYXQiOjE2NTAwMTAzNDl9.SB2hlub-zYR-9jyAzboCQ1n8CEScUBcRcCTpTquabJGWaaxgArAHnlwa_lkxL6f0-ngxn9e4lnu7RLxpbVCcfQ",
+  "files": {
+    "defile:624f0c77c5f80c000849031e": {
+      "name": "344245.pdf",
+      "pages": {
+        "1": {
+          "expected_rotation": 270
+        },
+        "2": {
+          "expected_rotation": 270
+        },
+        "3": {
+          "expected_rotation": 270
+        },
+        "4": {
+          "expected_rotation": 270
+        },
+        "5": {
+          "expected_rotation": 270
+        }
+      }
+    },
+    "defile:624f0e1ac5f80c00084903f1": {
+      "name": "270580.pdf",
+      "pages": {
+        "1": {
+          "expected_rotation": 270
+        }
+      }
+    },
+    "defile:624f0e30c5f80c0008490404": {
+      "name": "377981.pdf",
+      "pages": {
+        "1": {
+          "expected_rotation": 270
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+File Name,Page Number,Expected Rotation Angle,Predicted Rotation Angle,Status
+344245.pdf,1,270,270,Passed
+344245.pdf,2,270,270,Passed
+344245.pdf,3,270,270,Passed
+344245.pdf,4,270,270,Passed
+344245.pdf,5,270,270,Passed
+270580.pdf,1,270,270,Passed
+377981.pdf,1,270,270,Passed
+,,,,
+,,,,Accuracy
+,,,,100.0%

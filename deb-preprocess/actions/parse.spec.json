@@ -1,0 +1,117 @@
+{
+  "name" : "preprocess",
+  "description" : "It will derotate and deskew the image",
+  "phrase" : "preprocess",
+  "metadata" : { },
+  "inputSchema" : {
+    "type" : "object",
+    "title" : "",
+    "properties" : {
+      "file" : {
+        "type" : "object",
+        "format" : "file",
+        "description" : "File from the Process Input",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "thread" : {
+        "type" : "number",
+        "description" : "Specify the number of concurrent processing to be done on the doc",
+        "default" : "10"
+      },
+      "start_page" : {
+        "type" : "number",
+        "description" : "Start page from where the processing is to be done",
+        "default" : "1"
+      },
+      "end_page" : {
+        "type" : "number",
+        "description" : "End page till where the process is to be completed, '-1' will process all pages",
+        "default" : "-1"
+      },
+      "color" : {
+        "title": "Color",
+        "description" : "Select the type of image operation to be applied on the normalized image",
+        "type" : "string",                
+        "enum": [
+          "BlackWhite",
+          "Grayscale",
+          "Preserve"
+        ],
+        "default": "Preserve"
+      },
+      "removeBg" : {
+        "title": "Remove Background Noise",
+        "description" : "Setting this flag removes the background from the image and puts it to normalized variant",
+        "type" : "boolean",
+        "default" : false
+      },
+      "noLines" : {
+        "title": "Remove Lines",
+        "description" : "Setting this flag removes the lines from the image and puts it to normalized variant",
+        "type" : "boolean",
+        "default" : false
+      },
+      "deRotate" : {
+        "title": "Correct Orientation", 
+        "description" : "Setting this flag deRotate the image and puts it to normalized variant",
+        "type" : "boolean",
+        "default" : true
+      },
+      "deSkew" : {
+        "title": "Correct Skew",  
+        "description" : "Setting this flag deRotate the image and puts it to normalized variant",
+        "type" : "boolean",
+        "default" : true
+      },
+      "lambdaUrl" : {
+        "type" : "string",
+        "title" : "Lambda URL",
+        "description" : "Lambda URL from DE"
+      },
+      "userDefinedTemplate" : {
+        "type" : "boolean",
+        "description" : "Set to true if the skew correction is to be done as per user defined template",
+        "default": false
+      },
+      "udtFileId" : {
+        "type" : "string",
+        "description" : "Provide the user defined template file id"
+      }
+    }
+  },
+  "outputSchema" : {
+    "type" : "object",
+    "title" : "",
+    "properties" : {
+      "file" : {
+        "type" : "object",
+        "format" : "file",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

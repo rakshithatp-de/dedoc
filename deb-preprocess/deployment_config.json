@@ -1,0 +1,125 @@
+{
+  "default_environment": "prod",
+  "environment_specs": {
+    "40san": {
+      "execution_container": {
+        "imageName": "taskruntime:python-3.6-v1-226",
+        "instanceType": null
+      },
+      "default_gateway_url": "https://40sanity.dev.decisionengines.ai",
+      "default_bearer_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdmVtdWxhIiwiYXVkIjoiYW55IiwidXNlckRldGFpbCI6IntcbiAgXCJ1c2VybmFtZVwiIDogXCJzdmVtdWxhXCIsXG4gIFwiZmlyc3ROYW1lXCIgOiBcIkRldiBUb2tlblwiLFxuICBcImxhc3ROYW1lXCIgOiBcIlNyaW5pdmFzXCIsXG4gIFwiZXhpc3RpbmdVc2VyXCIgOiBmYWxzZSxcbiAgXCJhdXRob3JpdGllc1wiIDogWyB7XG4gICAgXCJyb2xlXCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLFxuICAgIFwiYXV0aG9yaXR5XCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiXG4gIH0sIHtcbiAgICBcInJvbGVcIiA6IFwiKjoqOipcIixcbiAgICBcImF1dGhvcml0eVwiIDogXCIqOio6KlwiXG4gIH0gXSxcbiAgXCJjcmVhdGVkVFNcIiA6IDAsXG4gIFwidXBkYXRlZFRTXCIgOiAwLFxuICBcInRva2VuRXhwaXJhdGlvbk1pbnNcIiA6IDUyNTYwMCxcbiAgXCJyb2xlc1wiIDogWyBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLCBcIio6KjoqXCIgXSxcbiAgXCJncm91cHNcIiA6IFsgXSxcbiAgXCJhZG1pblwiIDogdHJ1ZVxufSIsInRlbmFudElkIjoiREUiLCJlbnZJZCI6IkRFIiwiZXhwIjoxNjgyMzk0ODY4LCJpYXQiOjE2NTA4NTg4Njh9.kXRHj-905ni4cFSOKmbDfO3fMPfzLW4poFycUwwlACaZyyJ4TuKkw_iXQq5TR8cV2vx1R8TaEtFvkgF8ACH5Gg",
+      "python_dependencies": [],
+      "pip_cmd": "pip3.6 install",
+      "pip_args": [],
+      "linux_repo_installer_cmd": "sudo add-apt-repository -y",
+      "linux_repo_installer_args": [],
+      "linux_repos": [],
+      "linux_package_installer_cmd": "sudo apt install -y",
+      "linux_package_installer_args": [],
+      "linux_package_dependencies": [],
+      "throw_error_on_pip_failure": false,
+      "web_config_args": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "threaded": true,
+        "debug_mode": true
+      },
+      "logger_class": "decore.logging.default_python_logger.DefaultPythonLogger",
+      "logger_args": {
+        "level": "debug",
+        "filename": "test.log",
+        "log_to_file": true,
+        "log_to_stdout": true
+      },
+      "config_resources": {},
+      "skip_config_resource_types": [],
+      "skip_config_resource_names": [],
+      "web_app_class": "deplatform.bot.deployable_web_app.DeployableWebApp",
+      "health_endpoint": "/health",
+      "configuration_endpoint": "/config",
+      "packaging_type": "2.2",
+      "encrypt_zip": false,
+      "install_overrides": false
+    },
+    "cso": {
+      "execution_container": {
+        "imageName": "taskruntime:python-3.6-v1-226",
+        "instanceType": null
+      },
+      "default_gateway_url": "https://cso.dev.decisionengines.ai",
+      "default_bearer_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdmVtdWxhIiwiYXVkIjoiYW55IiwidXNlckRldGFpbCI6IntcbiAgXCJ1c2VybmFtZVwiIDogXCJzdmVtdWxhXCIsXG4gIFwiZmlyc3ROYW1lXCIgOiBcIkRldiBUb2tlblwiLFxuICBcImxhc3ROYW1lXCIgOiBcIlNyaW5pdmFzXCIsXG4gIFwiZXhpc3RpbmdVc2VyXCIgOiBmYWxzZSxcbiAgXCJhdXRob3JpdGllc1wiIDogWyB7XG4gICAgXCJyb2xlXCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLFxuICAgIFwiYXV0aG9yaXR5XCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiXG4gIH0sIHtcbiAgICBcInJvbGVcIiA6IFwiKjoqOipcIixcbiAgICBcImF1dGhvcml0eVwiIDogXCIqOio6KlwiXG4gIH0gXSxcbiAgXCJjcmVhdGVkVFNcIiA6IDAsXG4gIFwidXBkYXRlZFRTXCIgOiAwLFxuICBcInRva2VuRXhwaXJhdGlvbk1pbnNcIiA6IDUyNTYwMCxcbiAgXCJyb2xlc1wiIDogWyBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLCBcIio6KjoqXCIgXSxcbiAgXCJncm91cHNcIiA6IFsgXSxcbiAgXCJhZG1pblwiIDogdHJ1ZVxufSIsInRlbmFudElkIjoiREUiLCJlbnZJZCI6IkRFIiwiZXhwIjoxNjgyMzk0ODY4LCJpYXQiOjE2NTA4NTg4Njh9.kXRHj-905ni4cFSOKmbDfO3fMPfzLW4poFycUwwlACaZyyJ4TuKkw_iXQq5TR8cV2vx1R8TaEtFvkgF8ACH5Gg",
+      "python_dependencies": [],
+      "pip_cmd": "pip3.6 install",
+      "pip_args": [],
+      "linux_repo_installer_cmd": "sudo add-apt-repository -y",
+      "linux_repo_installer_args": [],
+      "linux_repos": [],
+      "linux_package_installer_cmd": "sudo apt install -y",
+      "linux_package_installer_args": [],
+      "linux_package_dependencies": [],
+      "throw_error_on_pip_failure": false,
+      "web_config_args": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "threaded": true,
+        "debug_mode": true
+      },
+      "logger_class": "decore.logging.default_python_logger.DefaultPythonLogger",
+      "logger_args": {
+        "level": "debug",
+        "filename": "test.log",
+        "log_to_file": true,
+        "log_to_stdout": true
+      },
+      "config_resources": {},
+      "skip_config_resource_types": [],
+      "skip_config_resource_names": [],
+      "web_app_class": "deplatform.bot.deployable_web_app.DeployableWebApp",
+      "health_endpoint": "/health",
+      "configuration_endpoint": "/config",
+      "packaging_type": "2.2",
+      "encrypt_zip": false,
+      "install_overrides": false
+    },
+    "demo_prod": {
+      "execution_container": {
+        "imageName": "taskruntime:python-3.6-v1-226",
+        "instanceType": null
+      },
+      "default_gateway_url": "https://demo.prod.decisionengines.ai",
+      "default_bearer_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdmVtdWxhIiwiYXVkIjoiYW55IiwidXNlckRldGFpbCI6IntcbiAgXCJ1c2VybmFtZVwiIDogXCJzdmVtdWxhXCIsXG4gIFwiZmlyc3ROYW1lXCIgOiBcIkRldiBUb2tlblwiLFxuICBcImxhc3ROYW1lXCIgOiBcIlNyaW5pdmFzXCIsXG4gIFwiZXhpc3RpbmdVc2VyXCIgOiBmYWxzZSxcbiAgXCJhdXRob3JpdGllc1wiIDogWyB7XG4gICAgXCJyb2xlXCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLFxuICAgIFwiYXV0aG9yaXR5XCIgOiBcIlJPTEVfQWRtaW5pc3RyYXRvclwiXG4gIH0sIHtcbiAgICBcInJvbGVcIiA6IFwiKjoqOipcIixcbiAgICBcImF1dGhvcml0eVwiIDogXCIqOio6KlwiXG4gIH0gXSxcbiAgXCJjcmVhdGVkVFNcIiA6IDAsXG4gIFwidXBkYXRlZFRTXCIgOiAwLFxuICBcInRva2VuRXhwaXJhdGlvbk1pbnNcIiA6IDUyNTYwMCxcbiAgXCJyb2xlc1wiIDogWyBcIlJPTEVfQWRtaW5pc3RyYXRvclwiLCBcIio6KjoqXCIgXSxcbiAgXCJncm91cHNcIiA6IFsgXSxcbiAgXCJhZG1pblwiIDogdHJ1ZVxufSIsInRlbmFudElkIjoiREUiLCJlbnZJZCI6IkRFIiwiZXhwIjoxNjgyMzk0ODY4LCJpYXQiOjE2NTA4NTg4Njh9.kXRHj-905ni4cFSOKmbDfO3fMPfzLW4poFycUwwlACaZyyJ4TuKkw_iXQq5TR8cV2vx1R8TaEtFvkgF8ACH5Gg",
+      "python_dependencies": [],
+      "pip_cmd": "pip3.6 install",
+      "pip_args": [],
+      "linux_repo_installer_cmd": "sudo add-apt-repository -y",
+      "linux_repo_installer_args": [],
+      "linux_repos": [],
+      "linux_package_installer_cmd": "sudo apt install -y",
+      "linux_package_installer_args": [],
+      "linux_package_dependencies": [],
+      "throw_error_on_pip_failure": false,
+      "web_config_args": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "threaded": true,
+        "debug_mode": true
+      },
+      "logger_class": "decore.logging.default_python_logger.DefaultPythonLogger",
+      "logger_args": {
+        "level": "debug",
+        "filename": "test.log",
+        "log_to_file": true,
+        "log_to_stdout": true
+      },
+      "config_resources": {},
+      "skip_config_resource_types": [],
+      "skip_config_resource_names": [],
+      "web_app_class": "deplatform.bot.deployable_web_app.DeployableWebApp",
+      "health_endpoint": "/health",
+      "configuration_endpoint": "/config",
+      "packaging_type": "2.2",
+      "encrypt_zip": false,
+      "install_overrides": false
+    }    
+  }
+}

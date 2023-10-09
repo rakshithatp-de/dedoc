@@ -1,0 +1,83 @@
+{
+  "metadata" : { },
+  "description" : "provide endpoints to preprocess the page variant",
+  "type" : "SCRIPT",
+  "version" : {
+    "major" : 2,
+    "minor" : 6
+  },
+  "dependencies" : {
+    "apt" : [ {
+      "name" : "de-tesseract",
+      "version" : "5.0-1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "de-tessdata-supported",
+      "version" : "1.0-1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "de-tessdata-jpn",
+      "version" : "1.0-1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "de-tessdata-chi",
+      "version" : "1.0-1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "libsm6",
+      "version" : "2:1.2.2-1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "ffmpeg",
+      "version" : "7:3.4.11-0ubuntu0.1",
+      "additionalProperties" : { }
+    }, {
+      "name" : "libxext6",
+      "version" : "2:1.3.3-1",
+      "additionalProperties" : { }
+    } ],
+    "pip" : [ {
+      "name" : "scikit-image",
+      "version" : "0.14.2",
+      "additionalProperties" : { }
+    }, {
+      "name" : "pytesseract",
+      "version" : "0.2.7",
+      "additionalProperties" : { }
+    }, {
+      "name" : "devision",
+      "version" : "3.0.231",
+      "additionalProperties" : { }
+    }, {
+      "name" : "deplatform",
+      "version" : "3.0.485",
+      "additionalProperties" : { }
+    }, {
+      "name" : "decore",
+      "version" : "3.0.132",
+      "additionalProperties" : { }
+    }, {
+      "name" : "deskew",
+      "version" : "1.0.19",
+      "additionalProperties" : { }
+    }, {
+      "name" : "opencv-python",
+      "version" : "4.5.3.56 --find-links 'http://repo.dev.decisionengines.ai/repository/pypi-proxy/packages/opencv-python/4.5.3.56/opencv_python-4.5.3.56-cp36-cp36m-manylinux2014_x86_64.whl'",
+      "additionalProperties" : { }
+    }
+    ]
+  },
+  "authenticationScheme" : "NONE",
+  "draft" : false,
+  "scriptType" : "PYTHON3",
+  "platformVersion" : 3,
+  "name" : "preprocess-bot-new",
+  "namespace" : "generic1",
+  "roleRequired" : false,
+  "stateless" : false,
+  "config" : { },
+  "specificationVersion" : "v2",
+  "deployment" : {
+    "maxMemory" : "4Gi"
+  }
+}
